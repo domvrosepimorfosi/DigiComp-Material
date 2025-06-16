@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigComp 2.2 & Διδασκαλία Ξένης Γλώσσας</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .credits {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .credits p {
+            margin: 5px 0;
+            font-size: 1.1em;
+            color: #555;
+        }
+        .credits .title {
+            font-size: 0.9em;
+            color: #777;
+        }
+        .activity-brief {
+            background-color: #fefbeb;
+            border: 1px solid #fce883;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        .activity-brief h2 {
+            margin-top: 0;
+            color: #c49000;
+        }
+        .collapsible {
+            background-color: #4A90E2;
+            color: white;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.3em;
+            margin-top: 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+        .collapsible:hover {
+            background-color: #357ABD;
+        }
+        .content {
+            padding: 0 18px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+        }
+        .content-padding {
+            padding: 20px;
+        }
+        .image-content {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .activity-image {
+            max-width: 80%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .content h3 {
+            color: #4A90E2;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-top:0;
+        }
+        .content h4 {
+            color: #333;
+        }
+        .material {
+            background-color: #e7f3fe;
+            border-left: 5px solid #4A90E2;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+        }
+        .material-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        ul {
+            list-style-type: '✅ ';
+            padding-left: 20px;
+        }
+        blockquote {
+            border-left: 4px solid #ccc;
+            padding-left: 15px;
+            margin-left: 0;
+            font-style: italic;
+            background-color: #fff;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="credits">
+        <p><strong>Δημιουργία/Επιμέλεια: Παναγιώτης Δόμβρος (CC BY-NC) 🎓✍️</strong></p>
+        <p class="title">Εκπαιδευτικός Αγγλικών – Θεατρολόγος 🎭📚 | Επιμορφωτής Τ.Π.Ε 💻📖</p>
+        <p class="title">Διευθυντής 1ου Γυμνασίου Πυλαίας 🏫👨‍🏫</p>
+    </div>
+
+    <h1 style="text-align:center;">DigComp 2.2 & Διδασκαλία Ξένης Γλώσσας 🚀</h1>
+
+    <div class="activity-brief">
+        <h2>Εισαγωγική Δραστηριότητα 📝</h2>
+        <p>Στη δραστηριότητα αυτή αναμένεται να εξοικειωθείτε με τη χρήση του Πλαισίου για την Ψηφιακή Ικανότητα των Πολιτών (DigComp 2.2) και τη σύνδεσή του με τη διδασκαλία της ξένης γλώσσας. Για τον σκοπό αυτό θα χωριστείτε σε πέντε ομάδες (2-3 ατόμων) και κάθε ομάδα θα εργαστεί στο δικό της εικονικό δωμάτιο με βάση έναν από τους πέντε τομείς που συνθέτουν την ψηφιακή ικανότητα ως ακολούθως:</p>
+        <ul>
+            <li><b>ΟΜΑΔΑ Α:</b> Επίλυση προβλήματος</li>
+            <li><b>ΟΜΑΔΑ Β:</b> Γραμματισμός της Πληροφορίας και των Δεδομένων</li>
+            <li><b>ΟΜΑΔΑ Γ:</b> Επικοινωνία και Συνεργασία</li>
+            <li><b>ΟΜΑΔΑ Δ:</b> Δημιουργία Ψηφιακού Περιεχομένου</li>
+            <li><b>ΟΜΑΔΑ Ε:</b> Ασφάλεια</li>
+        </ul>
+        <p>Συζητήστε και μελετήστε το υλικό που υπάρχει διαθέσιμο στο <a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC128415" target="_blank">https://publications.jrc.ec.europa.eu/repository/handle/JRC128415</a>. Στη συνέχεια, καλείστε να περιγράψετε μια δραστηριότητα η οποία εστιάζει στην καλλιέργεια δεξιοτήτων των μαθητών σας - αυριανών πολιτών και σχετίζεται με τη συγκεκριμένη θεματική ενότητα. Είναι απαραίτητο η περιγραφή της δραστηριότητας να συνοδεύεται από στοιχεία που αφορούν στο προφίλ των μαθητών στους οποίους απευθύνεστε (ηλικία, επίπεδο γλώσσας, θεματική περιοχή, σύνδεση με ενότητα του σχολικού εγχειριδίου για την ξένη γλώσσα ή με άλλα μαθήματα).</p>
+    </div>
+    
+    <button type="button" class="collapsible">ΟΜΑΔΑ Α: Επίλυση Προβλήματος ✈️🆘</button>
+    <div class="content">
+        <div class="content-padding">
+            <div class="image-content">
+                <img src="A.png" alt="Cartoon για την Ομάδα Α: Επίλυση Προβλήματος" class="activity-image">
+            </div>
+            <div class="text-content">
+                <h3>Πρόταση Δραστηριότητας: «Αποστολή Διάσωσης: Το Χαμένο Εισιτήριο»</h3>
+                <h4>1. Επισκόπηση 💡</h4>
+                <ul>
+                    <li><strong>Προφίλ Μαθητών:</strong> 14-16 ετών, Επίπεδο Αγγλικών Β1.</li>
+                    <li><strong>Θεματική:</strong> Ταξίδια, Τεχνολογία.</li>
+                    <li><strong>🎯 Στόχοι:</strong> Κατανόηση/παραγωγή email, χρήση λεξιλογίου ταξιδιών/τεχνολογίας, επίλυση τεχνικών προβλημάτων.</li>
+                    <li><strong>🛠️ Υλικά:</strong> Η/Υ με internet, προβολέας, επεξεργαστής κειμένου.</li>
+                </ul>
+                <h4>2. Αναλυτικό Σενάριο Υλοποίησης 👨‍🏫</h4>
+                <p><strong>Βήμα 1: Εισαγωγή & Παρουσίαση Σεναρίου (10 λεπτά)</strong><br>
+                Ξεκινήστε με μια γρήγορη συζήτηση στην τάξη: <em>"Have you ever travelled by plane? What do you need to get on the plane?"</em> (Αναμένετε απαντήσεις όπως: a ticket, a boarding pass). <em>"What problems can you have at an airport?"</em> (Αναμένετε απαντήσεις όπως: lose my ticket, my flight is delayed, my phone has no battery). Στη συνέχεια, παρουσιάστε το πρόβλημα: <em>"This is an email from your friend, Alex. He is at the airport in London and has a serious problem. Read the email in your groups. Your mission is to help him."</em> Προβάλλετε ή μοιράστε το email του Alex.</p>
+        
+                <p><strong>Βήμα 2: Έρευνα & Επίλυση Προβλήματος (15 λεπτά)</strong><br>
+                Δώστε στις ομάδες το φύλλο εργασίας και πείτε τους: <em>"Work together. First, identify the two main problems Alex has. Then, use your computers to search for solutions. Remember to look for the website of 'AirJet'."</em> Καθώς οι ομάδες δουλεύουν, περιφερθείτε στην τάξη και βοηθήστε κάνοντας ερωτήσεις-κλειδιά αντί να δίνετε έτοιμες απαντήσεις: <em>"What did you search for on Google?", "What keywords are important? ('AirJet', 'manage booking', 'check-in online')?", "What solutions can you think of for the battery problem inside an airport?"</em></p>
+
+                <p><strong>Βήμα 3: Σύνταξη της Απάντησης (15 λεπτά)</strong><br>
+                Δώστε οδηγίες στις ομάδες να ανοίξουν έναν επεξεργαστή κειμένου: <em>"Now, write your reply email to Alex. Use the ideas from your worksheet. Your instructions must be very clear and simple. Use numbers for the steps. Remember, Alex is panicking!"</em> Μπορείτε να γράψετε μια απλή δομή στον πίνακα για να τους βοηθήσετε (Greeting, Part 1: battery, Part 2: boarding pass, Closing).</p>
+                
+                <p><strong>Βήμα 4: Παρουσίαση & Αξιολόγηση (10 λεπτά)</strong><br>
+                Ζητήστε από κάθε ομάδα να προβάλει ή να διαβάσει το email που έγραψε. Αφού παρουσιάσουν όλες, ρωτήστε την τάξη: <em>"Which email had the clearest instructions? Why?"</em>. Δώστε θετική ανατροφοδότηση και τονίστε τη σημασία της επίλυσης πραγματικών προβλημάτων με ψηφιακά εργαλεία.</p>
+                
+                <h4>3. Αναλυτικό Υλικό Δραστηριότητας 📥</h4>
+                <div class="material">
+                    <span class="material-title">Το Email του Φίλου</span>
+                    <blockquote>
+                        <p><strong>Subject: HELP! I'm stuck at the airport! 😱</strong></p>
+                        <p>Hey everyone,</p>
+                        <p>I have a huge problem and I hope you can help me.</p>
+                        <p>I'm at Heathrow Airport in London. My flight to Athens is in two hours, but I can't find my digital boarding pass! I think I deleted the email from the airline by mistake.</p>
+                        <p>My phone battery is also very low, only 5%! I'm really starting to panic. 😰</p>
+                        <p>The airline is called <strong>"AirJet"</strong> and my flight number is <strong>AJ247</strong>. My booking reference code is <strong>6GKP2D</strong>.</p>
+                        <p>Can you please check the AirJet website and send me simple, step-by-step instructions on how to get my boarding pass again? And any ideas for my phone battery?</p>
+                        <p>Thanks a million,<br>Alex</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="collapsible">ΟΜΑΔΑ Β: Γραμματισμός Πληροφορίας 📰🔍</button>
+    <div class="content">
+        <div class="content-padding">
+            <div class="image-content">
+                <img src="B.png" alt="Cartoon για την Ομάδα Β: Γραμματισμός Πληροφορίας" class="activity-image">
+            </div>
+            <div class="text-content">
+                <h3>Πρόταση Δραστηριότητας: «Είναι Αλήθεια; Ερευνούμε τις Ειδήσεις»</h3>
+                <h4>1. Επισκόπηση 💡</h4>
+                <ul>
+                     <li><strong>Προφίλ Μαθητών:</strong> 15-17 ετών, Επίπεδο Γαλλικών Β2.</li>
+                     <li><strong>Θεματική:</strong> Περιβάλλον, ΜΜΕ, Fake News.</li>
+                     <li><strong>🎯 Στόχοι:</strong> Σύγκριση πηγών, αξιολόγηση αξιοπιστίας, διασταύρωση πληροφοριών.</li>
+                     <li><strong>🛠️ Υλικά:</strong> Η/Υ με internet, προβολέας, τα 3 άρθρα.</li>
+                </ul>
+                <h4>2. Αναλυτικό Σενάριο Υλοποίησης 👨‍🏫</h4>
+                <p><strong>Βήμα 1: Εισαγωγή & Παρουσίαση Σεναρίου (10 λεπτά)</strong><br>
+                Ξεκινήστε μια συζήτηση στα Γαλλικά: <em>"Où lisez-vous les actualités? Est-ce que vous croyez tout ce que vous lisez en ligne? Pourquoi?"</em>. Παρουσιάστε το σενάριο: <em>"Imaginez: vous voyez ces trois articles en ligne. Un seul est vrai, un est trompeur, et un est complètement faux. Votre mission est de devenir des journalistes d'investigation."</em></p>
+
+                <p><strong>Βήμα 2: Έρευνα & Ανάλυση (20 λεπτά)</strong><br>
+                Μοιράστε το υλικό και το φύλλο ελέγχου και δώστε οδηγίες: <em>"Utilisez cette fiche pour analyser chaque article. Ne restez pas seulement sur la page! Faites des recherches sur Google. Cherchez le nom du site, le nom de l'auteur, et si d'autres sources fiables parlent de cette nouvelle."</em> Καθοδηγήστε τους με ερωτήσεις: <em>"Qui a écrit cet article?", "Regardez l'adresse du site (URL).", "L'article cite-t-il ses sources?"</em></p>
+
+                <p><strong>Βήμα 3: Σύνθεση & Προετοιμασία Παρουσίασης (10 λεπτά)</strong><br>
+                Ζητήστε από τις ομάδες να ετοιμάσουν την παρουσίασή τους: <em>"Préparez une courte présentation. Vous devez annoncer votre verdict pour chaque article et, le plus important, justifier votre décision avec les preuves que vous avez trouvées."</em></p>
+                
+                <p><strong>Βήμα 4: Παρουσίαση & Συζήτηση (10 λεπτά)</strong><br>
+                Κάθε ομάδα παρουσιάζει τα ευρήματά της. Στο τέλος, αποκαλύψτε τις σωστές απαντήσεις και συντονίστε μια συζήτηση για τα "σημάδια κινδύνου" της παραπληροφόρησης που εντόπισαν οι μαθητές.</p>
+
+                <h4>3. Αναλυτικό Υλικό Δραστηριότητας 📥</h4>
+                <div class="material">
+                    <span class="material-title">Τα 3 Άρθρα προς Διερεύνηση</span>
+                    <p><strong>Θέμα: Ένας μύκητας που τρώει πλαστικό ανακαλύφθηκε στο δάσος του Fontainebleau.</strong></p>
+                    
+                    <blockquote>
+                        <p><strong>📰 Άρθρο 1: Η ΑΛΗΘΙΝΗ (Le Vrai)</strong></p>
+                        <p><strong>Source:</strong> `www.science-avenir.fr`<br>
+                        <strong>Titre:</strong> Des chercheurs du CNRS identifient un champignon capable de dégrader le plastique dans la forêt de Fontainebleau</p>
+                        <p><em>Par Hélène Lambert, Journaliste scientifique. Publié le 15 juin 2025.</em></p>
+                        <p>Une équipe de microbiologistes du CNRS, dirigée par le Dr. Arnaud Dubois, a publié des résultats prometteurs dans la revue "Nature Microbiology". Leur étude porte sur une souche du champignon <em>Pestalotiopsis microspora</em>, découverte sur des débris plastiques dans une zone reculée de la forêt de Fontainebleau.</p>
+                        <p>Selon l'étude, ce micro-organisme est capable de décomposer le polyuréthane, un type de plastique très courant, même dans des conditions anaérobies (sans oxygène). "C'est une piste très intéressante pour le biorecyclage," explique le Dr. Dubois. "Cependant, la recherche n'en est qu'à ses débuts. Le processus est lent et nous devons encore déterminer comment l'appliquer à une échelle industrielle de manière sûre et efficace."</p>
+                    </blockquote>
+
+                    <blockquote>
+                        <p><strong>⚠️ Άρθρο 2: Η ΠΑΡΑΠΛΑΝΗΤΙΚΗ (Le Trompeur)</strong></p>
+                        <p><strong>Source:</strong> `www.planete-miracle.com`<br>
+                        <strong>Titre:</strong> MIRACLE ! UN CHAMPIGNON MAGIQUE DÉVORANT LE PLASTIQUE VA SAUVER LA PLANÈTE ! 🌍✨</p>
+                        <p><em>Par "EcoWarrior77". Publié: il y a une semaine.</em></p>
+                        <p>Incroyable nouvelle pour l'humanité ! Des héros anonymes ont découvert un champignon miracle dans la forêt de Fontainebleau qui mange littéralement le plastique ! Oubliez les problèmes de pollution, la nature a trouvé LA solution !</p>
+                        <p>Imaginez un monde sans déchets plastiques. Grâce à ce champignon extraordinaire, nos océans et nos terres seront nettoyés en quelques années seulement. Des sources disent que ce champignon est si puissant qu'il peut faire disparaître une bouteille en plastique en une seule journée ! Le gouvernement essaie peut-être de nous le cacher, mais la vérité éclate ! Partagez cette nouvelle pour sauver la Terre ! #sauvonslaplanete #champignonmiracle</p>
+                    </blockquote>
+
+                    <blockquote>
+                        <p><strong>👽 Άρθρο 3: Η ΨΕΥΔΗΣ (Le Faux)</strong></p>
+                        <p><strong>Source:</strong> `www.verite-cachee.info`<br>
+                        <strong>Titre:</strong> Alerte : Le champignon mangeur de plastique de Fontainebleau est une arme biologique extraterrestre</p>
+                        <p><em>Auteur: Anonyme. Date: 12/01/2011</em></p>
+                        <p>Ne soyez pas dupes. Le soi-disant "champignon écologique" de Fontainebleau n'est pas ce qu'il semble être. Nos sources internes confirment qu'il s'agit d'un organisme génétiquement modifié, laissé par une civilisation extraterrestre après le crash d'un OVNI en 1998.</p>
+                        <p>Ce champignon est conçu pour dévorer le plastique, puis attaquer d'autres matériaux comme le métal et le béton, afin de détruire nos infrastructures. Il brille la nuit d'une lueur verte et des témoins ont rapporté avoir entendu des chuchotements près des zones contaminées. C'est un plan pour affaiblir la Terre avant l'invasion. N'approchez pas la forêt !</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="collapsible">ΟΜΑΔΑ Γ: Επικοινωνία & Συνεργασία 🤝💬</button>
+    <div class="content">
+        <div class="content-padding">
+            <div class="image-content">
+                <img src="C.png" alt="Cartoon για την Ομάδα Γ: Συνεργασία" class="activity-image">
+            </div>
+            <div class="text-content">
+                <h3>Πρόταση Δραστηριότητας: «Unser interkulturelles Projekt: Ein Stadtführer»</h3>
+                <h4>1. Επισκόπηση 💡</h4>
+                <ul>
+                    <li><strong>Προφίλ Μαθητών:</strong> 13-15 ετών, Επίπεδο Γερμανικών Α2-Β1.</li>
+                    <li><strong>Θεματική:</strong> Η πόλη μου, πολιτισμός, ελεύθερος χρόνος.</li>
+                    <li><strong>🎯 Στόχοι:</strong> Συνεργασία στο Padlet, περιγραφή τόπων, αλληλεπίδραση.</li>
+                    <li><strong>🛠️ Υλικά:</strong> Η/Υ, Padlet, προβολέας.</li>
+                </ul>
+                <h4>2. Αναλυτικό Σενάριο Υλοποίησης 👨‍🏫</h4>
+                <p><strong>Βήμα 1: Εισαγωγή & Παρουσίαση Εργαλείου (15 λεπτά)</strong><br>
+                Ξεκινήστε τη συζήτηση στα Γερμανικά: <em>"Stellt euch vor: Ein Tourist aus Deutschland kommt nach Thessaloniki. Was kann er hier machen?"</em>. Παρουσιάστε το project και κάντε ζωντανή επίδειξη του Padlet: πώς δημιουργούμε ανάρτηση, πώς γράφουμε τίτλο και κείμενο, και πώς ανεβάζουμε εικόνα. Δημιουργήστε τις στήλες του οδηγού και μοιραστείτε τον σύνδεσμο.</p>
+
+                <p><strong>Βήμα 2: Δημιουργία Περιεχομένου & Συνεργασία (20 λεπτά)</strong><br>
+                Αναθέστε στις ομάδες να προσθέσουν 2-3 αναρτήσεις. Δώστε οδηγίες: <em>"Findet ein schönes Foto (z.B. auf Pixabay oder Unsplash). Schreibt einen kurzen Text auf Deutsch (2-4 Sätze). Postet eure Idee in die richtige Spalte auf dem Padlet."</em> Βοηθήστε με το λεξιλόγιο και τη γραμματική.</p>
+                
+                <p><strong>Βήμα 3: Αλληλεπίδραση & Σχολιασμός (10 λεπτά)</strong><br>
+                Δώστε την επόμενη εντολή: <em>"Sehr gut! Jetzt lest die Posts von den anderen Gruppen. Schreibt mindestens zwei Kommentare oder Fragen auf Deutsch."</em> Γράψτε στον πίνακα φράσεις-κλειδιά για να τους βοηθήσετε (π.χ. "Das finde ich interessant!", "Gute Idee!").</p>
+
+                <p><strong>Βήμα 4: Παρουσίαση & Αναστοχασμός (5 λεπτά)</strong><br>
+                Προβάλλετε τον τελικό, συλλογικό πίνακα Padlet. Θαυμάστε το αποτέλεσμα όλοι μαζί και κάντε μερικές ερωτήσεις αναστοχασμού: <em>"Was war euer Lieblingstipp?", "War es einfach, mit Padlet zu arbeiten?"</em></p>
+                
+                <h4>3. Αναλυτικό Υλικό Δραστηριότητας 📥</h4>
+                <div class="material">
+                    <span class="material-title">Δομή Πίνακα Padlet & Παραδείγματα</span>
+                    <p><strong>Τίτλος:</strong> Willkommen in Thessaloniki! Unser Stadtführer 🇬🇷🇩🇪</p>
+                    <p><strong>Στήλες:</strong> Sehenswürdigkeiten (Αξιοθέατα), Essen & Trinken (Φαγητό & Ποτό), Freizeit & Kultur (Ελεύθερος Χρόνος & Πολιτισμός), Geheimtipps (Μυστικές Συμβουλές).</p>
+                    <blockquote>
+                        <p><strong>📍 Παράδειγμα ανάρτησης 1 (Sehenswürdigkeiten):</strong></p>
+                        <p><strong>Titel:</strong> Der Weiße Turm</p>
+                        <p><strong>Text:</strong> Das ist das Symbol von Thessaloniki. Er ist sehr alt und berühmt. Man kann den Turm besuchen und die Aussicht von oben ist super!</p>
+                    </blockquote>
+                    <blockquote>
+                        <p><strong>🥐 Παράδειγμα ανάρτησης 2 (Essen & Trinken):</strong></p>
+                        <p><strong>Titel:</strong> Bougatsa zum Frühstück</p>
+                        <p><strong>Text:</strong> Das ist typisch für Thessaloniki. Es gibt süße Bougatsa (mit Creme) oder salzige Bougatsa (mit Käse). Sehr lecker! Man muss es probieren.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" class="collapsible">ΟΜΑΔΑ Δ: Δημιουργία Ψηφιακού Περιεχομένου 🎙️🎧</button>
+    <div class="content">
+        <div class="content-padding">
+            <div class="image-content">
+                <img src="D.png" alt="Cartoon για την Ομάδα Δ: Δημιουργία Περιεχομένου" class="activity-image">
+            </div>
+            <div class="text-content">
+                <h3>Πρόταση Δραστηριότητας: "Our Podcast: Stories from the Future"</h3>
+                <h4>1. Επισκόπηση 💡</h4>
+                <ul>
+                    <li><strong>Προφίλ Μαθητών:</strong> 16-18 ετών, Επίπεδο Αγγλικών Γ1.</li>
+                    <li><strong>🎯 Στόχοι:</strong> Παραγωγή προφορικού λόγου, δημιουργία podcast, κατανόηση copyright.</li>
+                    <li><strong>🛠️ Υλικά:</strong> Η/Υ, μικρόφωνα, Audacity.</li>
+                </ul>
+                <h4>2. Αναλυτικό Σενάριο Υλοποίησης 👨‍🏫</h4>
+                <p><strong>Βήμα 1: Εισαγωγή & Καταιγισμός Ιδεών (15 λεπτά)</strong><br>
+                Παίξτε ένα σύντομο απόσπασμα από επαγγελματικό podcast. Παρουσιάστε το project: <em>"Your mission is to produce a 3-5 minute podcast episode with the title 'Life in 2050'."</em> Κάντε καταιγισμό ιδεών για υπο-κατηγορίες (π.χ. Daily Life, Jobs, Travel) και αφήστε τις ομάδες να επιλέξουν.</p>
+                
+                <p><strong>Βήμα 2: Σενάριο & Σχεδιασμός Περιεχομένου (20 λεπτά)</strong><br>
+                Παρουσιάστε μια απλή δομή (Intro, Main Segment, Outro). Οι ομάδες γράφουν συνεργατικά το σενάριό τους σε Google Doc και σχεδιάζουν πού θα προσθέσουν μουσική ή ηχητικά εφέ από πηγές Creative Commons.</p>
+
+                <p><strong>Βήμα 3: Ηχογράφηση & Επεξεργασία (25-30 λεπτά)</strong><br>
+                Οι ομάδες ηχογραφούν τις φωνές τους. Κάντε μια γρήγορη επίδειξη των βασικών λειτουργιών του Audacity (εισαγωγή ήχου, αποκοπή, ένταση, εξαγωγή σε MP3). Στη συνέχεια, οι ομάδες μοντάρουν τις ηχογραφήσεις τους.</p>
+
+                <p><strong>Βήμα 4: "Πρεμιέρα" & Ανατροφοδότηση (15 λεπτά)</strong><br>
+                Διοργανώστε ένα "Podcast Festival" στην τάξη. Κάθε ομάδα παίζει το podcast της. Οι υπόλοιποι μαθητές παρέχουν ανατροφοδότηση με τη μέθοδο "Two Stars and a Wish" (2 θετικά, 1 πρόταση βελτίωσης).</p>
+                
+                <h4>3. Αναλυτικό Υλικό Δραστηριότητας 📥</h4>
+                <div class="material">
+                    <span class="material-title">Απόσπασμα Σεναρίου (Sample Script Snippet)</span>
+                    <blockquote>
+                        <p><strong>Podcast Title:</strong> Life in 2050: The Future of Work</p>
+                        <p><em>(Intro music with a futuristic vibe fades in and then fades to background)</em></p>
+                        <p><strong>Host:</strong> Hello and welcome back to 'Future Forward', the podcast that looks ahead. I'm your host, Leo. Today we're asking a huge question: will robots have taken all our jobs by 2050? I'm here with our future-tech analyst, Sarah. Sarah, what's your take?</p>
+                        <p><strong>Sarah:</strong> Thanks, Leo. Well, I think it’s highly probable that the very concept of a 'job' will have been completely transformed. It's not about robots 'taking' jobs, but about job roles evolving.</p>
+                        <p><em>(SOUND EFFECT: A soft, futuristic 'swoosh' sound)</em></p>
+                        <p><strong>Sarah:</strong> But I don't believe it's all doom and gloom. It’s conceivable that with AI and automation handling most repetitive tasks, humans will finally be free to focus on what we do best: creativity, critical thinking, and emotional intelligence – skills that are, for now, uniquely human.</p>
+                        <p><strong>Host:</strong> So, a shift from manual or data-based labor to more creative and interpersonal roles? That sounds optimistic!</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <button type="button" class="collapsible">ΟΜΑΔΑ Ε: Ασφάλεια 🛡️❗</button>
+    <div class="content">
+        <div class="content-padding">
+            <div class="image-content">
+                <img src="E.png" alt="Cartoon για την Ομάδα Ε: Ασφάλεια" class="activity-image">
+            </div>
+            <div class="text-content">
+                <h3>Πρόταση Δραστηριότητας: "Watch Out! Digital Traps"</h3>
+                <h4>1. Επισκόπηση 💡</h4>
+                <ul>
+                    <li><strong>Προφίλ Μαθητών:</strong> 12-14 ετών, Επίπεδο Αγγλικών Α2.</li>
+                    <li><strong>🎯 Στόχοι:</strong> Αναγνώριση ψηφιακών κινδύνων, χρήση προστακτικής, προστασία δεδομένων.</li>
+                    <li><strong>🛠️ Υλικά:</strong> Προβολέας, κάρτες, χαρτιά.</li>
+                </ul>
+                <h4>2. Αναλυτικό Σενάριο Υλοποίησης 👨‍🏫</h4>
+                <p><strong>Βήμα 1: Εισαγωγή & Λεξιλόγιο (10 λεπτά)</strong><br>
+                Ρωτήστε τους μαθητές: <em>"What do you do online?"</em>. Παρουσιάστε στον πίνακα λέξεις-κλειδιά με εικόνες: <strong>password, message, stranger, prize, danger</strong>. Παρουσιάστε την αποστολή: <em>"Today, we are detectives! 🕵️‍♀️ We will find digital traps online. Our mission is to learn how to be safe."</em></p>
+                
+                <p><strong>Βήμα 2: Αναγνώριση των Παγίδων (15 λεπτά)</strong><br>
+                Προβάλλετε τα σενάρια-παγίδες ένα-ένα. Για κάθε σενάριο, οι ομάδες συζητούν για ένα λεπτό και μετά σηκώνουν την αντίστοιχη κάρτα (Κόκκινο=Danger 🔴, Πράσινο=Safe 🟢). Ρωτήστε μια ομάδα που σήκωσε κόκκινη κάρτα να αιτιολογήσει την απάντησή της: <em>"Why is it dangerous?"</em> (π.χ. "Because it's a stranger.").</p>
+
+                <p><strong>Βήμα 3: Δημιουργία Κανόνων Ασφαλείας (15 λεπτά)</strong><br>
+                Αναθέστε σε κάθε ομάδα ένα από τα σενάρια και ζητήστε τους να δημιουργήσουν έναν "Χρυσό Κανόνα Ασφαλείας" σε μια αφίσα, χρησιμοποιώντας απλή γλώσσα και προστακτική: <em>"Create one Golden Safety Rule for your trap. Start with 'Never', 'Always', or 'Don't'."</em></p>
+
+                <p><strong>Βήμα 4: Παρουσίαση των Κανόνων (5 λεπτά)</strong><br>
+                Κάθε ομάδα παρουσιάζει την αφίσα της. Στο τέλος, όλες οι αφίσες αναρτώνται στον τοίχο για να δημιουργηθεί ο "Χάρτης Ασφαλείας της Τάξης στο Διαδίκτυο" (Classroom Internet Safety Charter).</p>
+                
+                <h4>3. Αναλυτικό Υλικό Δραστηριότητας 📥</h4>
+                <div class="material">
+                    <span class="material-title">Οι Ψηφιακές Παγίδες (The Digital Traps)</span>
+                    <blockquote>
+                        <p><strong>Trap 1: The Stranger 👤</strong></p>
+                        <p>You get a friend request on "Instapic". The name is "CoolGuy123". The profile picture is a cartoon. You see the text: "0 mutual friends".</p>
+                        <p><strong>What do you do?</strong></p>
+                    </blockquote>
+                     <blockquote>
+                        <p><strong>Trap 2: The Fake Prize 🏆</strong></p>
+                        <p>A big window pops up on your screen. It is flashing red and yellow.</p>
+                        <p><strong>"CONGRATULATIONS! YOU ARE THE 1,000,000th VISITOR! CLICK HERE TO WIN A NEW IPHONE!"</strong></p>
+                    </blockquote>
+                     <blockquote>
+                        <p><strong>Trap 3: The Password Thief 🔑</strong></p>
+                        <p>You get an email. The sender is "Goggle Security". It looks important.</p>
+                        <p><strong>"Subject: Account Problem! Your account is blocked. Please enter your password HERE to fix it now."</strong></p>
+                    </blockquote>
+                     <blockquote>
+                        <p><strong>Trap 4: The Mean Comment 😠</strong></p>
+                        <p>You post a photo of your new shoes. A user named "Anonymous22" writes a comment:</p>
+                        <p><strong>"Your new shoes are ugly. 🤢"</strong></p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
